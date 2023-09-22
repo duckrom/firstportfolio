@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-color: MistyRose;
 }
 
 /* Header Style */
@@ -15,6 +16,8 @@ header {
   font-size: 20pt;
   font-family: 'Times New Roman', Times, serif;
   position: relative;
+  z-index: 4;
+  
 }
 .logo {
   width: 80px;
@@ -28,6 +31,7 @@ header {
   margin: 0 auto;
   list-style: none;
   margin-right: 0;
+  border-radius: 10px;
 }
 .main1>li {
   float: left;
@@ -39,11 +43,13 @@ header {
 .main1>li:hover .main2 {
   left: 25%;
   display: block;
+  border-radius: 10px;
 }
 .main1>li a {
   display: block;
   color: black;
   text-decoration: none;
+  border-radius: 10px;
 }
 .main1>li a:hover {
   background: hotpink;
@@ -71,7 +77,6 @@ header {
 section {
   height: 100%;
   width: 100%;
-  background-color: beige;
 }
 
 .map {
@@ -80,27 +85,35 @@ section {
 }
 
 /* Section Style */
-.LRslide{
-  width: 1200px;
-  height: 400px;
-  border: 1px solid dimgrey;
-  margin: 0 auto;
-}
-
-.list{
-  height: 50px;
-  border-bottom: 1px solid dimgrey;
-  box-sizing: border-box;
+#wrapper { 
+  justify-content: center;
   text-align: center;
-  line-height: 50px;
-  font-size: 1.5rem;
+  display: grid;
+  grid-template-columns: 1000px;
+  grid-template-rows: 500px 500px 500px;
+  margin-top: 50px;
 }
 
-.slide{
-  width: 300px;
+.items:nth-child(1) {
+  background-color: beige;
+  margin-top: 50px;
+  position: relative; 
+  z-index: 3;
+}
+.items:nth-child(2) {
+  background-color: white;
+  margin-top: 50px;
+  position: relative; 
+  z-index: 2;
 }
 
-.slideimg {
+.items:nth-child(3) {
+  background-color: whitesmoke;
+  margin-top: 50px;
+  position: relative; 
+  z-index: 1;
+}
+.img {
   width: 300px;
   height: 300px;
 }
@@ -109,6 +122,9 @@ section {
 #cr{
   color: gray;
   left: 0;
+}
+footer {
+  background-color: hotpink;
 }
 
 .footer-social {
@@ -127,7 +143,7 @@ section {
 .footer-pol{
   position: fixed;
   bottom: 0;
-  margin-left: 50%;
+  margin-left: 85%;
   text-decoration-line: none;
   font-size: 20px;
 }
@@ -154,5 +170,5 @@ section {
   display: block;
   bottom: 100%; 
   left: 50%; 
-  margin-left: -100px;
+  margin-left: -500px;
 }

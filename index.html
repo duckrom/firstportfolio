@@ -10,11 +10,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/9e6a36f458.js" crossorigin="anonymous"></script>
-    <!-- JS and jQuery -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-    <script src="main.js"></script>
     <title>index</title>
 </head>
 
@@ -49,43 +44,28 @@
         </div>
     </header>
     <section>
-        <div class="LRslide">
-            <div class="list">Movies</div>
-            <div>
-                <div class="slide">
-                    <a><img class="slideimg" src="./img/m1.jpg"></a>
-                    <a><img class="slideimg" src="./img/m2.png"></a>
-                    <a><img class="slideimg" src="./img/m3.png"></a>
-                    <a><img class="slideimg" src="./img/m4.jpg"></a>
-                    <a><img class="slideimg" src="./img/m1.jpg"></a>
-                    <a><img class="slideimg" src="./img/m2.png"></a>
-                    <a><img class="slideimg" src="./img/m3.png"></a>
-                    <a><img class="slideimg" src="./img/m4.jpg"></a>
-                    <a><img class="slideimg" src="./img/m1.jpg"></a>
-                    <a><img class="slideimg" src="./img/m2.png"></a>
-                    <a><img class="slideimg" src="./img/m3.png"></a>
-                    <a><img class="slideimg" src="./img/m4.jpg"></a>
-                </div>
+        <div id="wrapper">
+            <div class="items">
+                <h1>Movie</h1>
+                <a><img src="./img/m1.jpg" class="img"></a>
+                <a><img src="./img/m2.png" class="img"></a>
+                <a><img src="./img/m3.png" class="img"></a>
+                <a><img src="./img/m4.jpg" class="img"></a>
             </div>
-        </div>
-        <div class="LRslide">
-            <div class="list">Animations</div>
-            <div>
-                <div class="slide">
-                    <a><img class="slideimg" src="./img/a1.jpg"></a>
-                    <a><img class="slideimg" src="./img/a2.jpg"></a>
-                    <a><img class="slideimg" src="./img/a3.jpg"></a>
-                    <a><img class="slideimg" src="./img/a4.jpg"></a>
-                    <a><img class="slideimg" src="./img/a1.jpg"></a>
-                    <a><img class="slideimg" src="./img/a2.jpg"></a>
-                    <a><img class="slideimg" src="./img/a3.jpg"></a>
-                    <a><img class="slideimg" src="./img/a4.jpg"></a>
-                    <a><img class="slideimg" src="./img/a1.jpg"></a>
-                    <a><img class="slideimg" src="./img/a2.jpg"></a>
-                    <a><img class="slideimg" src="./img/a3.jpg"></a>
-                    <a><img class="slideimg" src="./img/a4.jpg"></a>
-                </div>
+            <div class="items">
+                <h1>Animation</h1>
+                <a><img src="./img/a1.jpg" class="img"></a>
+                <a><img src="./img/a2.jpg" class="img"></a>
+                <a><img src="./img/a3.jpg" class="img"></a>
+                <a><img src="./img/a4.jpg" class="img"></a>
             </div>
+            <div class="items">
+                <h1>Drama</h1>
+                <a><img src="./img/m1.jpg" class="img"></a>
+                <a><img src="./img/m2.png" class="img"></a>
+                <a><img src="./img/m3.png" class="img"></a>
+                <a><img src="./img/m4.jpg" class="img"></a>
+            </div><br>
         </div>
     </section>
     <footer>
@@ -110,6 +90,8 @@
             </a>
         </div>
     </footer>
+    <!-- JS -->
+    <script src="main.js"></script>
 </body>
 
 </html>
