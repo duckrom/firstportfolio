@@ -12,6 +12,7 @@
     <script src="https://kit.fontawesome.com/9e6a36f458.js" crossorigin="anonymous"></script>
     <title>index</title>
 </head>
+<!-- flex box / grid -->
 
 <body>
     <header>
@@ -22,50 +23,42 @@
             <ul class="main1">
                 <li><a href="./index.html">Home</a>
                     <ul class="main2">
-                        <li><a href="./indexhtml/info.html">About us</a></li>
-                        <li><a href="./indexhtml/map.html">How to come</a></li>
+                        <li><a href="./html/info.html">About us</a></li>
+                        <li><a href="./html/map.html">How to come</a></li>
                     </ul>
                 </li>
-                <li><a href="#">History</a>
+                <li><a href="#">Gallery</a>
                     <ul class="main2">
-                        <li><a href="./producthtml/movie.html">Movies</a></li>
-                        <li><a href="./producthtml/anime.html">Animations</a></li>
-                        <li><a href="./producthtml/comic.html">Comics</a></li>
+                        <li><a href="./html/figure.html">Figure</a></li>
+                        <li><a>Brands</a>
+                            <ul class="main3">
+                                <li><a href="#">ABC</a></li>
+                                <li><a href="#">REF</a></li>
+                                <li><a href="#">XYZ</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
                 <li><a>News</a>
                     <ul class="main2">
-                        <li><a href="https://myanimelist.net/">Animationss</a></li>
-                        <li><a href="#">Games</a></li>
-                        <li><a href="#">Movies</a></li>
+                        <li><a href="https://www.animenewsnetwork.com/" target="_blank">Animationss</a></li>
+                        <li><a href="https://www.gameinformer.com/" target="_blank">Games</a></li>
+                        <li><a href="https://www.imdb.com/" target="_blank">Movies</a></li>
                     </ul>
                 </li>
             </ul>
         </div>
     </header>
     <section>
-        <div id="wrapper">
-            <div class="items">
-                <h1>Movie</h1>
-                <a><img src="./img/m1.jpg" class="img"></a>
-                <a><img src="./img/m2.png" class="img"></a>
-                <a><img src="./img/m3.png" class="img"></a>
-                <a><img src="./img/m4.jpg" class="img"></a>
-            </div>
-            <div class="items">
-                <h1>Animation</h1>
-                <a><img src="./img/a1.jpg" class="img"></a>
-                <a><img src="./img/a2.jpg" class="img"></a>
-                <a><img src="./img/a3.jpg" class="img"></a>
-                <a><img src="./img/a4.jpg" class="img"></a>
-            </div>
-            <div class="items">
-                <h1>Drama</h1>
-                <a><img src="./img/m1.jpg" class="img"></a>
-                <a><img src="./img/m2.png" class="img"></a>
-                <a><img src="./img/m3.png" class="img"></a>
-                <a><img src="./img/m4.jpg" class="img"></a>
-            </div><br>
+        <div class="grid">
+            <div class="grid-item"><img src="./img/a1.jpg" class="img"></div>
+            <div class="grid-item"><img src="./img/a2.jpg" class="img"></div>
+            <div class="grid-item"><img src="./img/a3.jpg" class="img"></div>
+            <div class="grid-item"><img src="./img/a4.jpg" class="img"></div>
+            <div class="grid-item"><img src="./img/m1.jpg" class="img"></div>
+            <div class="grid-item"><img src="./img/m2.png" class="img"></div>
+            <div class="grid-item"><img src="./img/m3.png" class="img"></div>
+            <div class="grid-item"><img src="./img/m4.jpg" class="img"></div>
         </div>
     </section>
     <footer>
@@ -92,6 +85,7 @@
     </footer>
     <!-- JS -->
     <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
 </body>
 
 </html>
