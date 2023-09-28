@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-color: MistyRose;
+  background-color: lightcyan;
 }
 
 /* Header Style */
@@ -11,13 +11,12 @@ header {
 #menu {
   height: 100px;
   width: 100%;
-  background-color: pink;
+  background-color: skyblue;
   color: white;
   font-size: 20pt;
   font-family: 'Times New Roman', Times, serif;
   position: relative;
-  z-index: 4;
-
+  z-index: 1;
 }
 
 .logo {
@@ -58,7 +57,7 @@ header {
 }
 
 .main1>li a:hover {
-  background: hotpink;
+  background: deepskyblue;
   font-weight: bold;
 }
 
@@ -66,7 +65,7 @@ header {
   position: absolute;
   top: 40px;
   display: none;
-  background: skyblue;
+  background: lightgreen;
   width: 120%;
   list-style: none;
   padding-left: 0;
@@ -92,14 +91,14 @@ header {
 
 .main2>li a:hover {
   display: block;
-  background: deepskyblue;
+  background: yellowgreen;
 }
 
 .main3 {
   position: absolute;
   top: 50px;
   display: none;
-  background: lightgreen;
+  background: lightpink;
   width: 120%;
   list-style: none;
   padding-left: 0;
@@ -107,7 +106,7 @@ header {
 
 .main3>li a:hover {
   display: block;
-  background: yellowgreen;
+  background: hotpink;
 }
 
 section {
@@ -116,43 +115,97 @@ section {
 }
 
 /*index.html*/
+.slide-container {
+  position: relative;
+  max-width: 100%;
+  text-align: center;
+  padding-top: 50px;
+}
 
+.imgSlide {
+  display: none;
+}
+
+.slide {
+  width: 400px;
+  height: 500px;
+}
+
+
+/*gallery.html*/
 .grid {
   display: grid;
+  grid-gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .grid-item {
   padding: 10px;
-  border-radius: 5px;
 }
 
-/*info.html*/
-.info {
-  padding: 30px;
+.img {
+  width: 340px;
 }
-.info_text {
+
+/*figure.html*/
+.figure {
+  padding: 50px;
+  justify-content: center;
+  text-align: center;
+}
+.figure_text1 {
   width: 70%;
+  height: 300px;
+  float: left;
   font-family: 'Times New Roman', Times, serif;
+}
+
+.figure_text2 {
+  width: 70%;
+  height: 300px;
+  float: right;
+  font-family: 'Times New Roman', Times, serif;
+}
+.figure_head {
+  font-size: 30px;
+}
+.figure_body {
   font-size: 20px;
 }
-.info_head 
-.info_body 
-.info_img {
-  width: 30%;
+.figure_img_1{
+  width: 25%;
+  height: 500px;
+  float: right;
 }
-.info_img_size{
-  width: 30%;
+.figure_img_2{
+  width: 25%;
+  height: 500px;
+  float: left;
+}
+.figure_img{
+  width: 100%;
+}
+/*info.html*/
+.info {
+  justify-content: center;
+  text-align: center;
+  padding-top: 100px;
+}
+.info h1 {
+  font-size: xx-large;
+}
+.info p {
+  padding-top: 30px;
+  font-size: larger;
+}
+.info a {
+  text-decoration: none;
 }
 
 /*map.html*/
 .map {
   width: 100% auto;
   height: 100% auto;
-}
-
-.img {
-  width: 100%;
 }
 
 /* Footer Style */
